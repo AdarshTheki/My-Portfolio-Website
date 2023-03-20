@@ -80,7 +80,8 @@
   font-size: 4rem;
   font-weight: 600;
 }
-input {
+
+input::after {
   font-size: 1.5rem;
   padding: 15px;
   width: 60%;
@@ -89,8 +90,8 @@ input {
 }
 
 #search-box {
-  /* box-shadow: inset; */
   box-shadow: 1px 1px 10px rgb(160, 147, 147);
+  
 }
 
 .container {
@@ -115,11 +116,13 @@ a {
   font-weight: 700;
   text-decoration: none;
 }
+
 a:hover{
   color: #594aac;
   text-decoration: underline;
   text-decoration-color: #000;
 }
+
 img{
   margin-right: 10px;
 }
@@ -160,7 +163,6 @@ footer {
   color: #dadbf1;
 }
 
-
 .footer-right {
   display: flex;
   justify-content: end;
@@ -173,15 +175,14 @@ footer {
   text-align: center;
 }
 
-/* Responsive Media */
-
+/* Responsive Media min-width : 1025px */
 @media (min-width: 1025px) {
   .category-list-item h1 {
     font-size: 1.5rem;
   }
 }
 
-
+/* Responsive Media max-width : 1024px */
 @media (max-width: 1024px) {
   .category-list-item h1 {
     font-size: 1.3rem;
@@ -193,9 +194,9 @@ footer {
   }
 }
 
-
+/* Responsive Media max-width : 864px */
 @media (max-width: 864px) {
-  .topbar_controls {
+  .topbar_controls {      /* Display : none */
     display: none;
   }
   .hero-unit h1 {
@@ -222,9 +223,7 @@ footer {
   }
 }
 
-
-
-
+/* Customer support "Help" fixed */
 .Help {
   font-weight: 800;
   font-size: 20px;
@@ -243,4 +242,4 @@ footer {
   color: white;
   text-decoration: none;
   background-color: #085591;
-  }
+}
