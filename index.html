@@ -6,194 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio website</title>
     <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/5638bd2fff.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/5638bd2fff.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="layout">
       <div class="topbar__inner">
         <div class="logo-wrapper">
-          <i class="fa-solid fa-vr-cardboard"><a href="#">Adarsh</a> </i>
-          |
-          <a href="#">help Center</a>
+          <a href="#">LOGO</a> || <a href="#">help Center</a>
         </div>
-        <input type="checkbox" id="check" title="checkbox">
+        <input type="checkbox" id="check" title="checkbox" />
         <div class="topbar_controls">
-          <button class="btn submit-a-request">Submit a Request</button>
-          <button class="btn login">Sign In</button>
+          <button class="btn submit-a-request" id="BgColor">
+            Background Color Changer
+          </button>
+          <button class="btn login" onclick="hello()">Sign In</button>
         </div>
         <label for="check">
           <i class="fa-solid fa-xmark close-btn" title="close-btn"></i>
           <i class="fa-solid fa-bars menu-btn" title="menu-btn"></i>
         </label>
       </div>
-      <main>
-        <div class="hero-unit">
-          <h1 class="hero-unit--large">How can we help?</h1>
-          <input placeholder="search..." type="text" name="search" id="search-box" />
+
+      <!-- Hero Section -->
+      <div class="hero-unit" id="BgColorChange">
+        <h1 class="hero-unit--large">How can we help?</h1>
+        <input
+          placeholder="search..."
+          type="text"
+          name="search"
+          class="search-box"
+        />
+      </div>
+
+      <hr style="background-color: #000000a6; padding: 4px; border: 0;" />
+
+      <!-- Main Content Section -->
+      <div class="container">
+        <div class="category-list-item">
+          <img src="./download/Score_100kb.jpg" alt="Authenticate" />
+          <h1>Score Monitor</h1>
+          <p>
+            Get in touch with a human Monitors. Get Live Cricket Scores, Ball by
+            Ball Commentary, Scorecard Updates, Match Facts & related News.
+          </p>
+          <a href="./index/Score_Monitor.html"> Scores Board✅ >> </a>
         </div>
 
-        <div class="container">
-          <div class="category-list-item">
-            <div class="category-list-icon">
-              <img src="./assets/Abstract.png" alt="Abstract" width="80px" />
-            </div>
-            <div class="category-list-content">
-              <h1>HOW NATURE !</h1>
-              <p>
-                " INSPIRES CREATIVITY " This is my first landing blog page. and please the sort comment review in given below ☺☺ 👇.
-              </p>
-              <a href="./index/Nature.html"> Inspiration Creativity >> </a>
-            </div>
-          </div>
-
-          <div class="category-list-item">
-            <div class="category-list-icon">
-              <img
-                src="./assets/manage_account.png"
-                alt="Abstract"
-                width="80px"
-              />
-            </div>
-            <div class="category-list-content">
-              <h1>CODING SNOW 🚀</h1>
-              <p>
-                This is second landing page. And please the sort review in given below ☺☺ 👇.
-              </p>
-              <a href="./index/CODINGSNOW.html"> Coding Snow >> </a>
-            </div>
-          </div>
-
-          <div class="category-list-item">
-            <div class="category-list-icon">
-              <img
-                src="./assets/organizations.png"
-                alt="Abstract"
-                width="80px"
-              />
-            </div>
-            <div class="category-list-content">
-              <h1>Landing Page - 2 and projects</h1>
-              <p>
-                Use Abstract organizations, teams, and projects to organize your
-                people and your work.
-              </p>
-              <a href="./index/landing_page_2.html"> Page -2 >> </a>
-            </div>
-          </div>
-
-          <div class="category-list-item">
-            <div class="category-list-icon">
-              <img src="./assets/billing.png" alt="Abstract" width="80px" />
-            </div>
-            <div class="category-list-content">
-              <h1>HOW NATURE - 2</h1>
-              <p>
-                " INSPIRES CREATIVITY - 2 " This is my first landing blog page. and please the sort comment review in given below ☺☺ 👇.
-              </p>
-              <a href="./index/Nature2.html"> Inspiration Creativity 2 >> </a>
-            </div>
-          </div>
-
-          <div class="category-list-item">
-            <div class="category-list-icon">
-              <img
-                src="./assets/Authenticate.png"
-                alt="Authenticate"
-                width="80px"
-              />
-            </div>
-            <div class="category-list-content">
-              <h1>Animation Buttons</h1>
-              <p>
-                Set up and configure SSO, SCIM, and Just-in-Time provisioning.
-              </p>
-              <a href="./index/btns.html"> Animation Buttons >> </a>
-            </div>
-          </div>
-
-          <div class="category-list-item">
-            <div class="category-list-icon">
-              <img src="./assets/support.png" alt="Authenticate" width="80px" />
-            </div>
-            <div class="category-list-content">
-              <h1>Great Indian scientist</h1>
-              <p>Get in touch with a human.</p>
-              <a href="./index/A. P. J..html"> A.P.J Abdul Kalam >> </a>
-            </div>
-          </div>
-          
-          <div class="category-list-item">
-            <div class="category-list-icon">
-              <img src="./NetFlix/assets/main.jpg" alt="Authenticate" width="80px" />
-            </div>
-            <div class="category-list-content">
-              <h1>NetFlix</h1>
-              <p>Get in touch with a human.</p>
-              <a href="./NetFlix/index.html"> Netflix >> </a>
-            </div>
-          </div>
-
-          <div class="category-list-item">
-            <div class="category-list-icon">
-              <img src="./NetFlix/assets/main.jpg" alt="Authenticate" width="80px" />
-            </div>
-            <div class="category-list-content">
-              <h1>Score Monitor</h1>
-              <p>Get in touch with a human Monitors.</p>
-              <a href="./index/Score_Monitor.html"> Scores✅ >> </a>
-            </div>
-          </div>
-        
-        </div>
-      </main>
-
-      <footer>
-        <div class="footer-left">
-          <div class="heading1 footer">
-            <h1>Abstract</h1>
-            <a href="#">Start Trial</a>
-            <a href="#">Pricing</a>
-            <a href="#">Download</a>
-          </div>
-          <div class="heading2 footer">
-            <h1>Resources</h1>
-            <a href="#">Blog</a>
-            <a href="#">Help Center</a>
-            <a href="#">Release Note</a>
-            <a href="#">Status</a>
-          </div>
-          <div class="heading3 footer">
-            <h1>Community</h1>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">FaceBook</a>
-            <a href="#">Dribble</a>
-            <a href="#">Podcast</a>
-          </div>
-          <div class="heading4 footer">
-            <h1>Company</h1>
-            <a href="#">About</a>
-            <a href="#">Careers</a>
-            <a href="#">Legal</a>
-            <h3>Contact Us</h3>
-            <a href="mailto:Info@absraction.com">Info@absraction.com</a>
-          </div>
+        <div class="category-list-item">
+          <img src="./download/Netflix_100kb.jpg" alt="Authenticate" />
+          <h1>NetFlix</h1>
+          <p>
+            Netflix, is American media company based in Los Gatos, California.
+            Founded in 1997 by Reed Hastings and Marc Randolph in Scotts Valley,
+            California
+          </p>
+          <a href="./NetFlix/index.html"> Got to Netflix >> </a>
         </div>
 
-          <div class="footer-right">
-            <div class="copyright">
-              <p>
-                <img src="./assets/organizations.png" alt="image" width="30" class="company-logo" />
-                © Copyright 2023 Adarsh Vs.Code Design, Inc. All rights reserved
-              </p>
-            </div>
-          </div>
-          <a href="#" class="Help">Help ?</a>
-          <hr>
-        </footer>
-    </div>
-  </body>
+        <div class="category-list-item">
+          <img
+            src="./download/natureBlog_100kb.jpg"
+            alt="Abstract"
+            width="50%"
+          />
+          <h1>HOW NATURE !</h1>
+          <p>
+            " INSPIRES CREATIVITY " This is my first landing blog page. and
+            please the sort comment review in given below ☺☺ 👇.
+          </p>
+          <a href="./index/Nature.html"> Inspiration Creativity >> </a>
+        </div>
+
+        <div class="category-list-item">
+          <img src="./download/Side_Bar_100kb.jpg" alt="Abstract" width="50%" />
+          <h1>CODING SNOW 🚀</h1>
+          <p>
+            This is second landing page. And please the sort review in given
+            below ☺☺ 👇.
+          </p>
+          <a href="./index/CODINGSNOW.html"> Coding Snow >> </a>
+        </div>
+
+        <div class="category-list-item">
+          <img src="./download/sidebar_100kb.jpg" alt="Abstract" />
+          <h1>Landing Page with projects</h1>
+          <p>
+            Use Abstract organizations, teams, and projects to organize your
+            people and your work.
+          </p>
+          <a href="./index/landing_page_2.html"> Landing Page >> </a>
+        </div>
+
+        <div class="category-list-item">
+          <img src="./download/APJ_100kb.jpg" alt="Authenticate" />
+          <h1>Great Indian scientist</h1>
+          <p>
+            A.P.J. Abdul Kalam, in full Avul Pakir Jainulabdeen Abdul Kalam, was
+            born on October 15, 1931, in Rameswaram, Tamil Nadu, India.
+          </p>
+          <a href="./index/A. P. J..html"> A.P.J Abdul Kalam ji >> </a>
+        </div>
+
+        <div class="category-list-item">
+          <img src="./download/nature_100kb.jpg" alt="Abstract" />
+          <h1>HOW NATURE - 2</h1>
+          <p>
+            " INSPIRES CREATIVITY - 2 " This is my first landing blog page. and
+            please the sort comment review in given below ☺☺ 👇.
+          </p>
+          <a href="./index/Nature2.html"> Inspiration Creativity 2 >> </a>
+        </div>
+
+        <div class="category-list-item">
+          <img src="./download/botton_100kb.jpg" alt="Authenticate" />
+          <h1>Animation Buttons</h1>
+          <p>
+            Animated Buttons ; Add a "pressed" effect on click: Click ; Add an
+            arrow on hover: Hover ; Add a "ripple" effect on click: Click.
+          </p>
+          <a href="./index/btns.html"> Animation Buttons >> </a>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="footer-container">
+        <div class="footer">
+          <h1>Abstraction</h1>
+          <a href="#">Start Trial</a>
+          <a href="#">Pricing</a>
+          <a href="#">Download</a>
+        </div>
+        <div class="footer">
+          <h1>Resources</h1>
+          <a href="#">Blog</a>
+          <a href="#">Help Center</a>
+          <a href="#">Release Note</a>
+          <a href="#">Status</a>
+        </div>
+        <div class="footer">
+          <h1>Community</h1>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">FaceBook</a>
+          <a href="#">Dribble</a>
+          <a href="#">Podcast</a>
+        </div>
+        <div class="footer">
+          <h1>Company</h1>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Legal</a>
+          <h3>Contact Us</h3>
+          <a href="mailto:AdarshTheki@gmail.com">Click here.</a>
+        </div>
+      </div>
+
+    <!-- CopyRight Section -->
+    <p class="copyright"> © Copyright 2023 Adarsh Vs.Code Design, Inc. All rights reserved</p>
+    
+    <!-- Help -->
+    <!-- Code begins here -->
+    
+    <a href="#" class="float my-float">Help</a>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
 </html>
