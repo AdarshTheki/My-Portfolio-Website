@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Cheat Sheet</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="grid">
+      <div class="container">
+        <h1>Git Cheat Sheet</h1>
+        <p>
+          Git is a version control system that allows you to track changes to
+          files and folders. It's a powerful tool that can be used for
+          everything from small personal projects to large-scale enterprise
+          applications.
+        </p>
+        <p>
+          This guide is a quick reference to the most common Git commands. It's
+          not meant to be a comprehensive guide to Git, but rather a quick
+          reference to the most common commands.
+        </p>
+
+        <p>
+          Here's the revised git cheatsheet with improved section titles and
+          reorganized:
+        </p>
+      </div>
+      <div class="container">
+        <h1>Setup and Configuration</h1>
+        <div class="box">
+<pre>
+<span> # Initialize a new Git repository</span>
+    git init
+    
+<span> # Clone and create a local copy of a remote repository</span>
+    git clone "url"
+    
+<span> # Configure global Git settings</span>
+    git config --global "setting_name" "value"
+    
+<span> # Configure local Git settings for a specific repo</span>
+    git config --local "setting_name" "value"
+    
+    
+    # --------------- Advanced ------------------
+    
+    
+<span> # Show a summary of your Git configuration settings</span>
+    git config --list
+    
+<span> # Set a custom text editor for Git messages</span>
+    git config --global core.editor ""editor_command""
+    
+<span> # Create a Git command alias</span>
+    git config --global alias."shortcut" "command"
+    
+<span> # Enable automatic colorization of Git output</span>
+    git config --global color.ui auto
+    
+<span> # Cache Git credentials for a certain amount of time</span>
+    git config --global credential.helper 'cache --timeout=<seconds>'
+    
+<span> # Configure git to detect specific types of whitespace errors</span>
+    git config --global core.whitespace "options"
+    
+<span> # Automatically prune remote-tracking branches when fetching updates</span>
+    git config --global fetch.prune true
+    
+<span> # Set a custom diff tool for Git</span>
+    git config --global diff.tool "tool"
+    
+<span> # Set a custom merge tool for Git</span>
+    git config --global merge.tool "tool"
+    
+<span> # Compare changes using a custom diff tool</span>
+    git difftool
+    
+<span> # Resolve merge conflicts with a custom merge tool</span>
+    git mergetool
+</pre>
+</div>
+<div class="container">
+    <h1>File Operations</h1>
+    <div class="box">
+<pre>
+<span># Show working tree status</span>
+    git status
+
+<span># Add files to the staging area</span>
+    git add "file(s)"
+
+<span># Remove files from working tree and staging area</span>
+    git rm "file(s)"
+
+<span># Move or rename a file</span>
+    git mv "old_file" "new_file"
+
+<span># Commit changes with a message</span>
+    git commit -m "commit message"
+
+<span># Show differences between working tree and last commit</span>
+    git diff
+
+# --------------- Advanced ------------------
+    
+<span># Assume a tracked file is unchanged</span>
+    git update-index --assume-unchanged "file""
+<span"# Restore normal behavior of tracking changes</span>
+    git update-index --no-assume-unchanged "file"
+
+<span># Show differences between two commits</span>
+    git diff "commit_id1".."commit_id2"
+
+<span># Unstage a file, but keep in the working directory</span>
+    git rm --cached "file_name"
+
+</pre>
+    
+    
+    </div>
+    </div>
+      </div>
+    </div></body></html>
