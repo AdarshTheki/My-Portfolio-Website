@@ -13,7 +13,7 @@ To get started with this project, clone the repository and open the `index.html`
 
 ## Clone the repo
 
-    git clone https://github.com/AdarshTheki/MY-PORTFOLIO-WEBSITE.git
+    git clone https://github.com/AdarshTheki/Portfolio-Website.git
 
 ## Author
 Adarsh Verma - 

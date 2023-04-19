@@ -54,14 +54,22 @@ nav button {
 
 .language-btn{
   display: inline-flex;
-  background: transparent;
+  background:transparent;
+  color: #FFF;
+  font-weight: 500;
   align-items: center;
+  border-radius: 5px;
   border: 1px solid #FFF;
   padding: 7px 10px;
 }
-
-.language-btn i {
-  margin-left: 10px;
+option{
+  font-size: 0.9rem;
+  padding: 2px 5px;
+  background-color: whitesmoke;
+  color: rgb(175, 31, 31);
+}
+.language-btn:hover{
+  background-color: #b4010144;
 }
 
 .header-container {
@@ -103,6 +111,12 @@ nav button {
   width:50%;
   font: inherit;
 }
+input:hover, 
+input:focus-visible {
+  outline: 2px solid crimson;
+  border-radius: 3px;
+}
+
 .email-signup button {
   border-radius: 4px;
   background: #db0001;
@@ -119,9 +133,6 @@ button:hover,
 button:focus {
   background-color: #b40101;
   transition: 0.3s;
-}
-.language-btn:hover{ 
-  background-color: rgba(0, 0, 0, 0.404);
 }
 
 hr {
@@ -207,7 +218,7 @@ hr {
   position: relative;
 }
 
-label::after{
+.according li label::after{
   content: '+';
   font-size: var(--FONT);
   position: absolute;
@@ -253,7 +264,7 @@ ul li:hover{
   font-weight: 100;
 }
 .footer h2 a {
-  color:#233eda;
+  color:#FFF;
   font-weight: 500;
   padding: 0 5px;
   text-decoration: none;
